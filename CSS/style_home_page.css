@@ -1,0 +1,247 @@
+
+
+body {
+
+    background-image: url(/IMAGE/duotone_moon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:50%, 50%;
+    background-attachment: fixed;
+}
+
+nav {
+
+    position: fixed;
+    width: 100%;
+    height: 57px;
+    border-bottom: solid rgba(87, 87, 87, 0.405) 1px;
+    position: relative;
+
+}
+
+nav .grup {
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    right: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.grup ul {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.grup li {
+    
+    margin-left: 30px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+}
+
+.grup li::after{
+
+    content: '';
+    background-color: #8b008b70;
+    width: 0%;
+    height: 3px;
+    border-radius: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 300ms ease-in;
+}
+
+.grup li:hover::after{
+
+    background-color: #8B008B;
+    width: 100%;
+}
+
+
+.grup a{
+
+    color: rgba(255, 255, 255, 0.500);
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 300ms linear;
+}
+
+.grup a:hover{
+
+    color: #fff;
+}
+nav img {
+    width: 45px;
+    margin: 5px 0px 0px 20px;
+}
+
+header {
+
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header h1 {
+
+
+    font-weight: bold;
+    font-size: 7vw;
+    letter-spacing: -4px;
+    text-align: center;
+
+}
+
+
+@media (max-width: 600px) {
+    
+    header h1 {
+        font-size: 2.5em;
+        letter-spacing: -2px;
+    }
+}
+header h4 {
+
+    text-align: center;
+    font-size: 2.8vw;
+    font-weight: 400;
+
+
+}
+
+@media (max-width: 600px) {
+    
+    header h4 {
+        font-size: 1.25em;
+
+    }
+}
+
+.button{
+
+    position: absolute;
+    left: 50%;
+    top: 75vh;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+@media (max-width: 414px) {
+    
+    .button  {
+
+        flex-direction: column;
+
+    }
+
+}
+
+.button a{
+
+    margin: 20px;
+}
+
+.button .home_page {
+
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(82.89deg, #8B008B -135.28%, rgba(139, 0, 139, 0) 139.17%);
+    border-radius: 20px;
+    border: none;
+    
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25em;
+    transition: 700ms ;
+}
+
+@media (max-width: 414px) {
+    
+    .button .home_page  {
+        font-size: 1em;
+        width: 145px;
+        height: 35px;
+
+    }
+
+}
+
+.button .portofolio {
+
+
+    background-color: transparent;
+    width: 168px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #8B008B;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25em;
+    position: relative;
+    transition: 700ms ;
+    overflow: hidden;
+    background: linear-gradient(82.89deg, #8b008b00 -135.28%, rgba(139, 0, 139, 0) 139.17%);                      
+    
+    
+    
+}
+
+@media (max-width: 414px) {
+    
+    .button .portofolio {
+        font-size: 1em;
+        width: 163px;
+        height: 35px;
+
+    }
+
+}
+
+.button .portofolio:hover {
+
+
+    border: none;
+    background: linear-gradient(82.89deg, #8B008B -135.28%, rgba(139, 0, 139, 0) 139.17%);
+
+}
+
+.grup_sosial_media{
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(-0%,-50%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grup_sosial_media a{
+
+    color: rgba(255, 255, 255, 0.700);
+    margin: 10px 0px;
+    transform: 300ms;
+
+
+}
+
+.grup_sosial_media a:hover{
+    
+    color: rgb(255, 255, 255);
+
+}
